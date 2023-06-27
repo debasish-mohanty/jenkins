@@ -11,11 +11,12 @@ file_name="hello_${current_date}_${current_time}.txt"
 # Display "Hello, world!" on the console
 echo "Hello, world!"
 
+cd /home/debasish/jenkins/
 # Write "Hello, world!" to a file
 echo "Hello, world!" > /home/debasish/jenkins/output/"$file_name"
 
 # Add the file to the Git repository
-git add "$file_name"
+git add "output/$file_name"
 
 # Commit the changes
 git commit -m "$commit_message"
