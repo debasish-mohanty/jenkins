@@ -1,11 +1,25 @@
 #!/bin/bash
 
-userhost=$(whoami)@$(hostname)
-echo "User and Host: $userhost"
+# Set up variables
+github_username="debasish-mohanty"
+repository_name="https://github.com/debasish-mohanty/jenkins.git"
+commit_message="Added hello.txt"
+current_date=$(date +"%Y-%m-%d")
+current_time=$(date +"%H-%M-%S")
+file_name="hello_${current_date}_${current_time}.txt"
 
-if ! command -v figlet &> /dev/null; then
-     echo "figlet is not installed. Installing figlet..."
-     sudo apt-get install -y figlet # Assuming a Debian-based system, adjust this command for your specific package manager
-fi
+# Display "Hello, world!" on the console
+echo "Hello, world!"
 
-echo "Hello, World!" | figlet
+# Write "Hello, world!" to a file
+echo "Hello, world!" > "$file_name"
+
+# Add the file to the Git repository
+git add "$file_name"
+
+# Commit the changes
+git commit -m "$commit_message"
+
+# Push the changes to GitHub
+git push "https://github.com/$github_username/$repository_name.git"
+
