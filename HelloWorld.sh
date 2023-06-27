@@ -2,7 +2,7 @@
 
 # Set up variables
 github_username="debasish-mohanty"
-repository_name="https://github.com/debasish-mohanty/jenkins.git"
+repository_name="jenkins.git"
 commit_message="Added hello.txt"
 current_date=$(date +"%Y-%m-%d")
 current_time=$(date +"%H-%M-%S")
