@@ -12,6 +12,7 @@ file_name="hello_${current_date}_${current_time}.txt"
 echo "Hello, world!"
 
 cd /home/debasish/jenkins/
+git pull
 # Write "Hello, world!" to a file
 echo "Hello, world!" > /home/debasish/jenkins/output/"$file_name"
 
