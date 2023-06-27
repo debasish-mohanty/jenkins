@@ -22,5 +22,5 @@ git add "output/$file_name"
 git commit -m "$commit_message"
 
 # Push the changes to GitHub
-git push "https://github.com/$github_username/$repository_name.git"
+git push "git@github.com:debasish-mohanty/jenkins.git"
 
