@@ -9,7 +9,7 @@ current_time=$(date +"%H-%M-%S")
 file_name="hello_${current_date}_${current_time}.txt"
 
 # Display "Hello, world!" on the console
-echo "Hello, world!"
+echo "Hello, Team"
 
 cd /home/debasish/jenkins/
 git pull
